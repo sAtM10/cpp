@@ -1,0 +1,119 @@
+Variables
+================================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Creating a variable reserves a memory location, or a space in memory for storing values. 
+The compiler requires that you provide a data type for each variable you declare.
+C++ offer a rich assortment of built-in as well as user defined data types.
+
+Integer, a built-in type, represents a whole number value. Define integer using the keyword int.
+C++ requires that you specify the type and the identifier for each variable defined.
+An identifier is a name for a variable, function, class, module, or any other user-defined item. 
+An identifier starts with a letter (A-Z or a-z) or an underscore (_), followed by additional letters, underscores, and digits (0 to 9).
+For example, define a variable called myVariable that can hold integer values as follows:
+int myVariable = 10; 
+Different operating systems can reserve different sizes of memory for the same data type.
+let's assign a value to the variable and print it.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int myVariable =10;
+  cout<<myVariable<<endl;
+  
+  return 0;
+}
+The C++ programming language is case-sensitive, so myVariable and myvariable are two different identifiers.
+
+Define all variables with a name and a data type before using them in a program. 
+In cases in which you have multiple variables of the same type, 
+it's possible to define them in one declaration, separating them with commas
+
+int a, b;
+// defines two variables of type int
+
+A variable can be assigned a value, and can be used to perform operations.
+For example, we can create an additional variable called sum, and add two variables together.
+
+int a = 30; 
+int b = 15; 
+int sum = a + b;
+// Now sum equals 45
+
+Use the + operator to add two numbers.
+Always keep in mind that all variables must be defined with a name and a data type before they can be used.
+
+====================================================================================================================
+Working with Variables
+--------------------------------------------------------------------------------------------------------------------
+Declaring Variables
+---------------------------------------------------------------------------------------------------------------------
+You have the option to assign a value to the variable at the time you declare the variable or to declare it and assign a value later.
+You can also change the value of a variable.
+Some examples:
+int a; 
+int b = 42;
+a = 10;
+b = 3;
+
+You can assign a value to a variable only in a declared data type.
+-------------------------------------------------------------------------------------------------------------------------
+User Input
+-------------------------------------------------------------------------------------------------------------------------
+To enable the user to input a value, use cin in combination with the extraction operator (>>). 
+The variable containing the extracted data follows the operator.
+The following example shows how to accept user input and store it in the num variable:
+int num;
+cin >> num;
+
+As with cout, extractions on cin can be chained to request more than one input in a single statement: cin >> a >> b;
+
+Accepting User Input
+
+The following program prompts the user to input a number and stores it in the variable a:
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a;
+  cout<<"enter number \n";
+  cin>>a;
+  return 0;
+}
+When the program runs, it displays the message "Please enter a number", and then waits for the user to enter 
+a number and press Enter, or Return.
+The entered number is stored in the variable a.
+The program will wait for as long as the user needs to type in a number.
+
+Let's create a program that accepts the input of two numbers and prints their sum.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,sum;
+  cout<<"enter number \n";
+  cin>>a;
+  cout<<"enter number \n";
+  cin>>b;
+  sum = a+b;
+  cout<<sum;
+  return 0;
+}
+
+Specifying the data type is required just once, at the time when the variable is declared.
+After that, the variable may be used without referring to the data type.
+int a;
+a = 10;
+Specifying the data type for a given variable more than once results in a syntax error.
+A variable's value may be changed as many times as necessary throughout the program.
+The auto keyword allows you to automatically deduct the type of the variable being declared.
+It infers the data type of the variable from its value.
+Any variable declared with the auto keyword should be initialized at the time of its declaration or there will be an error.
+====================================================================================================================================
+************************************************************************************************************************************
+
+
+
+

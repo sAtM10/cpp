@@ -1,0 +1,83 @@
+CPP
+=========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+C++ is a popular cross-platform language that can be used to create high-performance applications 
+- operating systems, browsers, video-games, art applications and so on.
+C++ was derived from C, and is largely based on it.
+A C++ program is a collection of commands or statements.
+
+Below is a simple program template.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+  return 0;
+}
+
+remember that the entry point of every C++ program is the main() function, irrespective of what the program does.
+Curly brackets { } indicate the beginning and end of a function, which can also be called the function's body. 
+The information inside the brackets indicates what the function does when executed.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  cout<<"hello world";
+  return 0;
+}
+
+cout is used to perform output on the standard output device which is usually the display screen.
+cout is used in combination with the insertion operator <<.
+Note that you can add multiple insertion operators after cout.
+In C++, the semicolon is used to terminate a statement. Each statement must end with a semicolon. 
+It indicates the end of one logical expression.
+=============================================================================================================
+Headers
+
+C++ offers various headers, each of which contains information needed for programs to work properly.
+We have already seen the standard <iostream> header on our first C++ program.
+#include is used for adding a standard or user-defined header files to the program.
+The <iostream> header defines the standard stream objects that input and output data.
+---------------------------------------------------------------------------------------------------------------
+Namespaces
+
+A namespace is a declarative region that provides a scope to the identifiers (names of elements) inside it.
+In our code, the line using namespace std; tells the compiler to use the std (standard) namespace:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+cout << "Hello world!";
+return 0;
+} 
+The std namespace includes features of the C++ Standard Library
+-------------------------------------------------------------------------------------------------------------------
+New Line
+
+The cout object does not insert a line break at the end of the output.
+One way to print two lines is to use the endl manipulator, which will put in a line break.
+
+The new line character \n can be used as an alternative to endl.
+Using a single cout statement with as many instances of \n as your program requires will print out multiple lines of text.
+The backslash (\) is called an escape character, and indicates a "special" character.
+----------------------------------------------------------------------------------------------------------------------
+Comments
+
+Comments are explanatory statements that you can include in the C++ code to explain what the code is doing.
+The compiler ignores everything that appears in the comment, so none of that information shows in the result.
+A comment beginning with two slashes (//) is called a single-line comment. 
+The slashes tell the compiler to ignore everything that follows, until the end of the line.
+Adding comments to your code is a good practice. It facilitates a clear understanding of the code for you and for others who read it.
+
+Multi line Comments
+Comments that require multiple lines begin with /* and end with */
+You can place them on the same line or insert one or more lines between them.
+Comments can be written anywhere, and can be repeated any number of times throughout the code.
+==============================================================================================================================================
+**********************************************************************************************************************************************
+
+
+
